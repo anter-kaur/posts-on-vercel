@@ -1,7 +1,7 @@
 
 const Deletepost=async(id,setErrors,fetchingdata)=>{
     
-    const response=await fetch(`http://localhost:8000/api/user/deleteuser/`+id,{
+    const response=await fetch(`${window.location.origin}/api/user/deleteuser/`+id,{
         method:"DELETE"
     })
     const result=await response.json()

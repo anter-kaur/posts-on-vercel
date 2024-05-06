@@ -10,7 +10,7 @@ const Update = () => {
     const navigate=useNavigate()
 
     const fetchingdata = async () => {
-        const response = await fetch(`http://localhost:8000/api/user/getusers/${id}`)
+        const response = await fetch(`${window.location.origin}/api/user/getusers/${id}`)
         const result = await response.json();
         if (response.ok) {
             setValues({
@@ -23,7 +23,7 @@ const Update = () => {
 
     const submitHandler=async (e)=>{
         e.preventDefault();
-        const response=await fetch(`http://localhost:8000/api/user/updateuser/${id}`,{
+        const response=await fetch(`${window.location.origin}/api/user/updateuser/${id}`,{
             method:"PATCH",
             headers:{
                 "Content-Type":"application/json"

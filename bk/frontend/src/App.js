@@ -6,6 +6,18 @@ import Posts from './components/Posts'
 import Update from './components/update'
 
 function App() {
+
+// Access protocol, domain, and port of the current webpage's URL
+const protocol = window.location.protocol;
+const domain = window.location.hostname;
+const port = window.location.port;
+
+// Use the retrieved information as needed
+console.log("Protocol:", protocol);
+console.log("Domain:", domain);
+console.log("Port:", port);
+
+
   return (
     <div className="App">
       <BrowserRouter>

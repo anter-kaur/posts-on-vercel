@@ -20,7 +20,7 @@ const AddPost=()=>{
     }
     const submitHandler=async(e)=>{
         e.preventDefault();
-        const response=await fetch('http://localhost:8000/api/user/adduser',{
+        const response=await fetch(`${window.location.origin}/api/user/adduser`,{
             method:"POST",
             headers:{
                 "Content-Type":"application/json"
