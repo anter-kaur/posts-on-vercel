@@ -7,7 +7,7 @@ const Posts = () => {
     const [errors, setErrors] = useState();
     let a;
     const fetchingdata = async () => {
-        const response = await fetch("http://localhost:8000/api/user/getusers");
+        const response = await fetch(`http://localhost:8000/api/user/getusers`);
         const result = await response.json();
         if (!response.ok) {
             setErrors(result.error);
