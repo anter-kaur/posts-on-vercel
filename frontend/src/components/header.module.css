@@ -1,0 +1,103 @@
+nav{
+    width:100%;
+    /* background-color: rgb(207, 172, 130); */
+    background-color: rgb(165, 135, 98);
+    color:whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index:1000;
+    top:0;
+}
+
+.web_name{
+    font-size: 30px;
+    padding:0 20px;
+    font-weight: bolder;
+}
+
+nav ul{
+    list-style: none;
+    display:flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin:10px 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.search_bar input{
+    width:200px;
+    height:20px;
+    border:1px solid black;
+    border-radius: 5px;
+    margin:10px 20px;
+}
+
+.cart{
+    background-color: rgba(26, 25, 25, 0.911);
+    color:white;
+    border-radius: 5px;
+    padding:0 5px;
+}
+
+.header_links{
+    color:white;
+    text-decoration: none;
+}
+
+.active{
+    color:red;
+}
+
+/* form's classes */
+
+.container{
+    display:flex;
+    flex-direction:column; 
+    justify-content:center;
+    
+  }
+  .subcontainer{
+    min-height:100vh;
+    width:auto;
+    margin:auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+.container label{
+    font-size:20px;
+    margin:10px 0px,
+  } 
+  
+  .container input{
+    width:250px;
+    height:25px;
+    border-radius:5px;
+    /* margin:10px 0 20px 0; */
+    /* border:none; */
+  }
+  .container button{
+    width:70px;
+    height:35px;
+    margin:15px 0;
+    padding:10px;
+    text-align: center;
+    background-color:bisque;
+    color:black;
+    border:none;
+  }
+
+  .text-align{
+    text-align:center;
+  }
+
+  .errors{
+    font-size:15px;
+    color:red;
+  }
